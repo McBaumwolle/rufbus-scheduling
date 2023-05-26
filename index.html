@@ -1,189 +1,25 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>Rufbus Scheduling System</title>
-    <p>Routing active between 'Puch, Am Feller' and 'Baar-Ebenhausen, Bahnhof'</p>
-    <style>
-        header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 10px;
-        }
-
-        .logo {
-            width: 20%;
-        }
-
-        h1 {
-            margin: 0;
-        }
-    </style>
-</head>
-
-<body>
-    <header>
-        <h1>Rufbus Scheduling System</h1>
-        <img class="logo" src="https://play-lh.googleusercontent.com/04G8YoLbws42YKkuzBWx-RkV94byZKtauMYapsM7TFdUELYMduMuN1iIm19FyWM-AR9Y" alt="Logo">
-    </header>
-  <style>
-    .collapsible {
-      background-color: #f9f9f9;
-      color: #444;
-      cursor: pointer;
-      padding: 18px;
-      width: 100%;
-      border: none;
-      text-align: left;
-      outline: none;
-      font-size: 15px;
-      transition: 0.4s;
-    }
-
-    .active {
-      background-color: #ccc;
-    }
-
-    .content {
-      padding: 0 18px;
-      display: none;
-      overflow: hidden;
-      background-color: #f9f9f9;
-      display: flex;
-    }
-
-    .column {
-      flex: 50%;
-      padding: 10px;
-    }
-
-    .column ul {
-      list-style-type: none;
-      padding: 0;
-      margin: 0;
-    }
-
-    .column li {
-      margin-bottom: 5px;
-    }
-  </style>
-</head>
 <body>
 
-<button class="collapsible">Monday</button>
-<div class="content">
-  <div class="column">
-    <h3>nach Ingolstadt</h3>
-    <ul>
-      <li><input type="checkbox" id="monday-1" name="departures" value="6:49"><label for="monday-1">6:49</label></li>
-      <li><input type="checkbox" id="monday-2" name="departures" value="7:53"><label for="monday-2">7:53</label></li>
-      <li><input type="checkbox" id="monday-3" name="departures" value="8:53"><label for="monday-3">8:53</label></li>
-      <li><input type="checkbox" id="monday-4" name="departures" value="9:52"><label for="monday-4">9:52</label></li>
-      <li><input type="checkbox" id="monday-5" name="departures" value="10:54"><label for="monday-5">10:54</label></li>
-      <li><input type="checkbox" id="monday-6" name="departures" value="11:53"><label for="monday-6">11:53</label></li>
-      <li><input type="checkbox" id="monday-7" name="departures" value="12:53"><label for="monday-7">12:53</label></li>
-      <li><input type="checkbox" id="monday-8" name="departures" value="13:53"><label for="monday-8">13:53</label></li>
-      <li><input type="checkbox" id="monday-9" name="departures" value="14:54"><label for="monday-9">14:54</label></li>
-      <li><input type="checkbox" id="monday-10" name="departures" value="15:51"><label for="monday-10">15:51</label></li>
-      <li><input type="checkbox" id="monday-11" name="departures" value="16:54"><label for="monday-11">16:54</label></li>
-      <li><input type="checkbox" id="monday-12" name="departures" value="17:51"><label for="monday-12">17:51</label></li>
-      <li><input type="checkbox" id="monday-13" name="departures" value="18:54"><label for="monday-13">18:54</label></li>
-      <li><input type="checkbox" id="monday-14" name="departures" value="19:53"><label for="monday-14">19:53</label></li>
-      <li><input type="checkbox" id="monday-15" name="departures" value="20:55"><label for="monday-15">20:55</label></li>
-      <li><input type="checkbox" id="monday-16" name="departures" value="21:55"><label for="monday-16">21:55</label></li>
-    </ul>
-  </div>
-  <div class="column">
-    <h3>von Ingolstadt</h3>
-    <ul>
-      <li><input type="checkbox" id="monday-17" name="departures" value="5:53"><label for="monday-17">5:53</label></li>
-      <li><input type="checkbox" id="monday-18" name="departures" value="6:23"><label for="monday-18">6:23</label></li>
-      <li><input type="checkbox" id="monday-19" name="departures" value="7:47"><label for="monday-19">7:47</label></li>
-      <li><input type="checkbox" id="monday-20" name="departures" value="8:44"><label for="monday-20">8:44</label></li>
-      <li><input type="checkbox" id="monday-21" name="departures" value="9:48"><label for="monday-21">9:48</label></li>
-      <li><input type="checkbox" id="monday-22" name="departures" value="10:48"><label for="monday-22">10:48</label></li>
-      <li><input type="checkbox" id="monday-23" name="departures" value="11:48"><label for="monday-23">11:48</label></li>
-      <li><input type="checkbox" id="monday-24" name="departures" value="12:48"><label for="monday-24">12:48</label></li>
-      <li><input type="checkbox" id="monday-25" name="departures" value="13:51"><label for="monday-25">13:51</label></li>
-      <li><input type="checkbox" id="monday-26" name="departures" value="14:49"><label for="monday-26">14:49</label></li>
-      <li><input type="checkbox" id="monday-27" name="departures" value="15:50"><label for="monday-27">15:50</label></li>
-      <li><input type="checkbox" id="monday-28" name="departures" value="16:48"><label for="monday-28">16:48</label></li>
-      <li><input type="checkbox" id="monday-29" name="departures" value="17:49"><label for="monday-29">17:49</label></li>
-      <li><input type="checkbox" id="monday-30" name="departures" value="18:51"><label for="monday-30">18:51</label></li>
-      <li><input type="checkbox" id="monday-31" name="departures" value="19:47"><label for="monday-31">19:47</label></li>
-      <li><input type="checkbox" id="monday-32" name="departures" value="20:49"><label for="monday-32">20:49</label></li>
-      <li><input type="checkbox" id="monday-33" name="departures" value="22:50"><label for="monday-33">22:50</label></li>
-    </ul>
-  </div>
-</div>
+<h1>The select element</h1>
 
-<button class="collapsible">Tuesday</button>
-<div class="content">
-  <div class="column">
-    <h3>nach Ingolstadt</h3>
-    <ul>
-      <li><input type="checkbox" id="tuesday-1" name="departures" value="6:49"><label for="tuesday-1">6:49</label></li>
-      <li><input type="checkbox" id="tuesday-2" name="departures" value="7:53"><label for="tuesday-2">7:53</label></li>
-      <li><input type="checkbox" id="tuesday-3" name="departures" value="8:53"><label for="tuesday-3">8:53</label></li>
-      <li><input type="checkbox" id="tuesday-4" name="departures" value="9:52"><label for="tuesday-4">9:52</label></li>
-      <li><input type="checkbox" id="tuesday-5" name="departures" value="10:54"><label for="tuesday-5">10:54</label></li>
-      <li><input type="checkbox" id="tuesday-6" name="departures" value="11:53"><label for="tuesday-6">11:53</label></li>
-      <li><input type="checkbox" id="tuesday-7" name="departures" value="12:53"><label for="tuesday-7">12:53</label></li>
-      <li><input type="checkbox" id="tuesday-8" name="departures" value="13:53"><label for="tuesday-8">13:53</label></li>
-      <li><input type="checkbox" id="tuesday-9" name="departures" value="14:54"><label for="tuesday-9">14:54</label></li>
-      <li><input type="checkbox" id="tuesday-10" name="departures" value="15:51"><label for="tuesday-10">15:51</label></li>
-      <li><input type="checkbox" id="tuesday-11" name="departures" value="16:54"><label for="tuesday-11">16:54</label></li>
-      <li><input type="checkbox" id="tuesday-12" name="departures" value="17:51"><label for="tuesday-12">17:51</label></li>
-      <li><input type="checkbox" id="tuesday-13" name="departures" value="18:54"><label for="tuesday-13">18:54</label></li>
-      <li><input type="checkbox" id="tuesday-14" name="departures" value="19:53"><label for="tuesday-14">19:53</label></li>
-      <li><input type="checkbox" id="tuesday-15" name="departures" value="20:55"><label for="tuesday-15">20:55</label></li>
-      <li><input type="checkbox" id="tuesday-16" name="departures" value="21:55"><label for="tuesday-16">21:55</label></li>
-    </ul>
-  </div>
-  <div class="column">
-    <h3>von Ingolstadt</h3>
-    <ul>
-      <li><input type="checkbox" id="tuesday-17" name="departures" value="5:53"><label for="tuesday-17">5:53</label></li>
-      <li><input type="checkbox" id="tuesday-18" name="departures" value="6:23"><label for="tuesday-18">6:23</label></li>
-      <li><input type="checkbox" id="tuesday-19" name="departures" value="7:47"><label for="tuesday-19">7:47</label></li>
-      <li><input type="checkbox" id="tuesday-20" name="departures" value="8:44"><label for="tuesday-20">8:44</label></li>
-      <li><input type="checkbox" id="tuesday-21" name="departures" value="9:48"><label for="tuesday-21">9:48</label></li>
-      <li><input type="checkbox" id="tuesday-22" name="departures" value="10:48"><label for="tuesday-22">10:48</label></li>
-      <li><input type="checkbox" id="tuesday-23" name="departures" value="11:48"><label for="tuesday-23">11:48</label></li>
-      <li><input type="checkbox" id="tuesday-24" name="departures" value="12:48"><label for="tuesday-24">12:48</label></li>
-      <li><input type="checkbox" id="tuesday-25" name="departures" value="13:51"><label for="tuesday-25">13:51</label></li>
-      <li><input type="checkbox" id="tuesday-26" name="departures" value="14:49"><label for="tuesday-26">14:49</label></li>
-      <li><input type="checkbox" id="tuesday-27" name="departures" value="15:50"><label for="tuesday-27">15:50</label></li>
-      <li><input type="checkbox" id="tuesday-28" name="departures" value="16:48"><label for="tuesday-28">16:48</label></li>
-      <li><input type="checkbox" id="tuesday-29" name="departures" value="17:49"><label for="tuesday-29">17:49</label></li>
-      <li><input type="checkbox" id="tuesday-30" name="departures" value="18:51"><label for="tuesday-30">18:51</label></li>
-      <li><input type="checkbox" id="tuesday-31" name="departures" value="19:47"><label for="tuesday-31">19:47</label></li>
-      <li><input type="checkbox" id="tuesday-32" name="departures" value="20:49"><label for="tuesday-32">20:49</label></li>
-      <li><input type="checkbox" id="tuesday-33" name="departures" value="22:50"><label for="tuesday-33">22:50</label></li>
-    </ul>
-  </div>
-</div>
+<p>The select element is used to create a drop-down list.</p>
 
-<button onclick="location.href='preview.html'">next</button>
+<form action="/action_page.php">
+  <label for="cars">Choose a car:</label>
+  <select name="cars" id="cars">
+    <option value="volvo">Volvo</option>
+    <option value="saab">Saab</option>
+    <option value="opel">Opel</option>
+    <option value="audi">Audi</option>
+  </select>
+  <br><br>
+  <input type="submit" value="Submit">
+</form>
 
-
-<script>
-  var coll = document.getElementsByClassName("collapsible");
-  var i;
-
-  for (i = 0; i < coll.length; i++) {
-    coll[i].addEventListener("click", function() {
-      this.classList.toggle("active");
-      var content = this.nextElementSibling;
-      if (content.style.display === "flex") {
-        content.style.display = "none";
-      } else {
-        content.style.display = "flex";
-      }
-    });
-  }
-</script>
+<p>Click the "Submit" button and the form-data will be sent to a page on the 
+server called "action_page.php".</p>
 
 </body>
 </html>
-
