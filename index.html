@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Dropdown List Example</title>
+    <title>Rufbus Scheduling</title>
     <link rel="stylesheet" href="https://mcbaumwolle.github.io/rufbus-scheduling/style.css">
+    <script src="https://mcbaumwolle.github.io/rufbus-scheduling/script.js"></script> 
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
@@ -12,32 +14,6 @@
     <select id="stops">
         <!-- Dropdown options will be dynamically populated using JavaScript -->
     </select>
-
-    <script>
-        // URL of the JSON file on GitHub
-        var jsonUrl = 'https://raw.githubusercontent.com/McBaumwolle/rufbus-scheduling/main/data/stops.json';
-
-        // Fetch the JSON data
-        fetch(jsonUrl)
-            .then(response => response.json())
-            .then(data => {
-                // Access the locations array from the JSON data
-                var locations = data.locations;
-
-                // Get the dropdown element
-                var dropdown = document.getElementById('stops');
-
-                // Populate the dropdown with options
-                locations.forEach(function(location) {
-                    var option = document.createElement('option');
-                    option.text = location;
-                    dropdown.add(option);
-                });
-            })
-            .catch(error => {
-                console.log('Error:', error);
-            });
-    </script>
 
 </body>
 </html>
