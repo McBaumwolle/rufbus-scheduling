@@ -5,3 +5,11 @@ body {
     color: #333333;
     background-color: #ffffff;
 }
+
+/* change font in select box */
+select {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    color: #333333;
+}
